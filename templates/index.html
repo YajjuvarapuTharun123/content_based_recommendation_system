@@ -19,13 +19,13 @@
             <button type="submit">Recommend</button>
         </form>
 
-        {% if recommendations %}
+        {% if recommendations is not none and not recommendations.empty %}
             <h2>Recommended Movies:</h2>
             <div class="recommendations">
                 {% for movie in recommendations.itertuples() %}
                     <div class="movie">
                         <h3>{{ movie.title }}</h3>
-                        <img src="{{ movie.image }}" alt="{{ movie.title }}">
+                        <img src="{{ url_for('static', filename='img/' + movie.image) }}" alt="{{ movie.title }}">
                     </div>
                 {% endfor %}
             </div>

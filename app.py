@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 
 # Load the dataset and model
-df = pd.read_csv('movies_recommendation.csv')
+df = pd.read_csv('movies_recommendation1.csv')
 count_vectorizer = joblib.load('count_vectorizer.pkl')
 cosine_sim = joblib.load('cosine_similarity.pkl')
 
