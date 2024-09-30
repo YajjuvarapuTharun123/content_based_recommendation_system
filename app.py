@@ -27,6 +27,3 @@ def index():
         movie_title = request.form.get('movie_title')
         recommendations = get_recommendations(movie_title)
     return render_template('index.html', recommendations=recommendations, movies=df['title'].tolist())
-
-if __name__ == '__main__':
-    app.run(debug=True)
