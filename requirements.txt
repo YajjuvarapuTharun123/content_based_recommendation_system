@@ -1,5 +1,5 @@
-streamlit==1.16.0  # Ensure this matches your Streamlit version
-pandas==1.5.3      # Adjust this as needed based on your use case
-joblib==1.1.0      # For loading the model
-Pillow==9.0.0      # For image handling
-scikit-learn==1.2.0  # Ensure compatibility with your cosine similarity model
+streamlit
+pandas
+joblib
+Pillow
+scikit-learn
